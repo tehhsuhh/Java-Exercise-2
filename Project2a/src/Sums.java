@@ -1,8 +1,8 @@
 
-// Tessa Biava
-// CST-105
-// June 15th,2019
-// This is my own work
+//Tessa Biava
+//June 9th, 2019
+//CST-105
+//This is my own work
 
 import java.util.Scanner;
 // importance of placement
@@ -22,8 +22,12 @@ public class Sums {
 		int fourthNumber;
 		int fifthNumber;
 		int total;
-			//accidentally kept declaring originalNumber twice
+		//declaring all variables
+		
+			//accidentally kept declaring originalNumber twice caused trouble
+		
 		// Create a scanner
+		//Scanner class to create an object to read input from System.in,
 		Scanner input = new Scanner(System.in);
 
 		// asking for input from user
@@ -31,6 +35,7 @@ public class Sums {
 		int originalNumber = input.nextInt();
 
 		// compute
+		// separate each number so that we can compute
 		placeholder1 = originalNumber / 10;
 		firstNumber = originalNumber % 10;
 
@@ -47,6 +52,7 @@ public class Sums {
 		fifthNumber = placeholder4 % 10;
 
 		total = firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber;
+		//adding all of the seperate numbers together
 
 		// output
 		System.out.println("The sum of " + fifthNumber + " + " + fourthNumber + " + " + thirdNumber + " + "
